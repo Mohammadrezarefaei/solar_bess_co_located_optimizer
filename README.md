@@ -1,8 +1,14 @@
 # ☀️🔋 Co-located Solar PV + BESS Dispatch Optimizer
 
 [![Optimizer CI](https://github.com/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/actions)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://solar-plus-storage-dispatch-optimizer-mrearm8fvjnryhdygkxp6y.streamlit.app/)
 
 A mathematical optimization framework for maximizing commercial revenues in **co-located Solar PV and Battery Energy Storage Systems (BESS)** under strict **Grid Interconnection Capacity Constraints** in the European electricity wholesale market.
+
+---
+
+## 🚀 Live Interactive Demo
+👉 **[Access the Live Streamlit Web App](https://solar-plus-storage-dispatch-optimizer-mrearm8fvjnryhdygkxp6y.streamlit.app/)**
 
 ---
 
@@ -18,15 +24,15 @@ Renewable asset developers frequently face grid capacity bottlenecks where the n
 
 ---
 
-## 🔍 Key Findings & Value Drivers
+## 🔍 Key Findings & Commercial Value Drivers
 
-* **Curtailment Mitigation:** The battery absorbs excess generation that would otherwise be curtailed by grid boundaries or liquidated into negative price spreads.
-* **Energy Time-Shifting:** Stored energy is evacuated during high-demand evening net-load ramps (€120–145/MWh), unlocking substantial revenue uplift over standalone solar assets.
-* **Solver Implementation:** Formulated via Linear Programming using the **HiGHS Solver** for deterministic and globally optimal dispatch solutions.
+* **Grid Curtailment Mitigation:** The battery actively absorbs midday generation that would otherwise be curtailed by substation thermal limits or liquidated into negative price regimes.
+* **Energy Time-Shifting:** Stored energy is evacuated during evening net-load ramps (€120–145/MWh), unlocking substantial revenue uplift over standalone solar assets.
+* **Linear Programming Precision:** Formulated and solved via the **HiGHS Solver** (`scipy.optimize.linprog`) for deterministic, globally optimal daily dispatch schedules.
 
 ---
 
 ## 🛠️ Software Architecture & Automated Testing
-* **CI/CD Pipeline:** Fully automated testing via **GitHub Actions** (`pytest` suite validating grid export limits, C-rate compliance, and round-trip efficiency losses).
-* **Modular Core Engine:** Located in `src/hybrid_engine.py`.
-* **Tech Stack:** Python 3.11, SciPy (Linear Programming), NumPy, Pandas, Matplotlib, Pytest.
+* **CI/CD Pipeline:** Fully automated testing via **GitHub Actions** with **all unit tests passing** (`pytest` suite validating grid export limits, C-rate compliance, state-of-charge continuity, and round-trip efficiency losses).
+* **Modular Core Engine:** Implemented in `src/hybrid_engine.py`.
+* **Tech Stack:** Python 3.11, SciPy (Linear Programming), NumPy, Pandas, Matplotlib, Streamlit, Pytest.
