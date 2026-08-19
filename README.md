@@ -1,6 +1,6 @@
 # ☀️🔋 Co-located Solar PV + BESS Dispatch Optimizer
 
-[![Hybrid Optimizer CI](https://github.com/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/actions/workflows/ci.yml/badge.svg)](https://github.com/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/actions)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/ci.yml?branch=main&label=CI%20Pipeline&logo=github&style=flat-square)](https://github.com/Mohammadrezarefaei/solar-plus-storage-dispatch-optimizer/actions)
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://solar-plus-storage-dispatch-optimizer-mrearm8fvjnryhdygkxp6y.streamlit.app/)
 
 A mathematical optimization framework for maximizing commercial revenues in **co-located Solar PV and Battery Energy Storage Systems (BESS)** under strict **Grid Interconnection Capacity Constraints** in the European electricity wholesale market.
